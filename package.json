@@ -9,7 +9,8 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "format:check": "prettier --check \"src/**/*.ts\"",
     "test": "vitest run --passWithNoTests",
-    "prepare": "husky"
+    "prepare": "husky",
+    "dev": "vite"
   },
   "lint-staged": {
     "src/**/*.ts": [
