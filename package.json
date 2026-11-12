@@ -1,0 +1,45 @@
+{
+  "name": "bulls-and-cows",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && vite build",
+    "lint": "eslint .",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\"",
+    "test": "vitest run --passWithNoTests",
+    "prepare": "husky",
+    "dev": "vite"
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n3fenyak/bulls-and-cows.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n3fenyak/bulls-and-cows/issues"
+  },
+  "homepage": "https://github.com/n3fenyak/bulls-and-cows#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.10.1",
+    "typescript": "5.9",
+    "typescript-eslint": "^8.72.2",
+    "vite": "6.4",
+    "vitest": "3.2"
+  }
+}
