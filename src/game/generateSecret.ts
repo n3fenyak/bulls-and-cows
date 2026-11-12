@@ -3,9 +3,17 @@ export function generateSecret(
   base: number,
   random: () => number = Math.random,
 ): string {
-  void length;
-  void base;
-  void random;
+  const digits = '0123456789abcdef'.slice(0, base).split('');
 
-  return '';
+  let secret = '';
+
+  for (let i = 0; i < length; i++) {
+    const randomIndex = Math.floor(random() * digits.length);
+
+    const selectedDigit = digits.splice(randomIndex, 1)[0];
+
+    secret += selectedDigit;
+  }
+
+  return secret;
 }
